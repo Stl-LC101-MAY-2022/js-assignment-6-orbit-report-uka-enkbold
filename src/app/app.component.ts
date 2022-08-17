@@ -8,7 +8,7 @@ import { Satellite } from './satellite';
 })
 export class AppComponent {
   title = 'orbit-report';
-
+ 
   sourceList: Satellite[];
   displayList: Satellite[];
 
@@ -30,7 +30,7 @@ export class AppComponent {
 				 }
 
 				 // make a copy of the sourceList to be shown to the user
-				 this.displayList = this.sourceList.slice(0);
+				 this.displayList = this.sourceList.slice(Satellite);
 	  
 			}.bind(this));
 		}.bind(this));
